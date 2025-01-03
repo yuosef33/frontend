@@ -1,0 +1,12 @@
+.waiting{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #555; /* Gray color for the text */
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #ccc; /* Dashed border to highlight the empty state */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    margin: 20px auto; /* Center the div with margins */
+    max-width: 400px; /* Limit the width for better readability */
+}

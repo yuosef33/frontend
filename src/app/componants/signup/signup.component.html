@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title signup">Signup Form</div>
+  </div>
+  <div class="form-container">
+    <div class="form-inner">
+      <form class="signup">
+        <div class="field">
+          <input #name type="text" placeholder="Name" required>
+        </div>
+        <div class="field">
+          <input #email type="text" placeholder="Email Address" required>
+        </div>
+        <div class="field">
+          <input #phoneNumber type="text" placeholder="Phone Number" required>
+        </div>
+        <div class="field">
+          <input #password type="password" placeholder="Password" required>
+        </div>
+        <div class="field">
+          <input #confirmPassword type="password" placeholder="Confirm password" required>
+        </div>
+
+        <div class="field btn">
+          <div class="btn-layer"></div>
+        <button class="submit" (click)="signup(email.value, password.value, confirmPassword.value,name.value,phoneNumber.value)">Signup</button>
+        </div>
+        <div class="signup-link">Not a member? <a routerLink="/login">login now</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="error-message" *ngIf="messageResultEn || messageResultAr">
+  <p *ngIf="messageResultEn" class="message-en">{{ messageResultEn }}</p>
+  <p *ngIf="messageResultAr" class="message-ar">{{ messageResultAr }}</p>
+
+</div>
